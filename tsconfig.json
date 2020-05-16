@@ -6,7 +6,7 @@
     "rootDir": "./src",
     "types": [
       // "lua-types/5.3"
-      "./src/typings/nanos-world"
+      "./typings"
     ],
     "noImplicitAny": true,
     "strict": true
