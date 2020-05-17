@@ -1,3 +1,6 @@
+/// <reference path="packageeventtype.d.ts" />
+
+
 declare namespace Package {
     function GetName(): string;
     function Log(message: string): void;

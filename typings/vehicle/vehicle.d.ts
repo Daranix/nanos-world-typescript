@@ -1,6 +1,8 @@
 /// <reference path="../utility/color.d.ts" />
 /// <reference path="../actor/actor.d.ts" />
 /// <reference path="../misc/pickable.d.ts" />
+/// <reference path="vehicleeventtype.d.ts" />
+
 
 /** @customConstructor Vehicle */
 declare class Vehicle extends Actor implements Pickable {

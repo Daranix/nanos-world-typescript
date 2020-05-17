@@ -3,6 +3,8 @@
 /// <reference path="../weapon/weapon.d.ts" />
 /// <reference path="../prop/prop.d.ts" />
 /// <reference path="../actor/actor.d.ts" />
+/// <reference path="../grenade/grenade.d.ts" />
+
 
 
 declare namespace NanosWorld {

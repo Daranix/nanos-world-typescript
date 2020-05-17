@@ -1,4 +1,6 @@
 /// <reference path="../item/item.d.ts" />
+/// <reference path="grenadeeventtype.d.ts" />
+
 
 /** 
  * @customConstructor Grenade 

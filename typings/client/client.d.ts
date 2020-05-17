@@ -1,3 +1,6 @@
+/// <reference path="clienteventtype.d.ts" />
+
+
 /** @noSelfInFile */
 declare namespace Client {
     function GetMousePosition(): Vector2D;

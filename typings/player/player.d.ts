@@ -1,5 +1,7 @@
 
 /// <reference path="../actor/actor.d.ts" />
+/// <reference path="../player/playereventtype.d.ts" />
+
 /** @noSelfInFile */
 declare class Player {
     GetPing(): number;

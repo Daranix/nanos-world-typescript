@@ -2,6 +2,15 @@
 /// <reference path="charactereventtype.d.ts" />
 /// <reference path="../item/item.d.ts" />
 /// <reference path="../weapon/weapon.d.ts" />
+/// <reference path="character-morph-target.d.ts" />
+/// <reference path="character-scalar-params.d.ts" />
+/// <reference path="character-vector-parameter.d.ts" />
+/// <reference path="aimmode.d.ts" />
+/// <reference path="viewmode.d.ts" />
+/// <reference path="swimmingmode.d.ts" />
+/// <reference path="stancemode.d.ts" />
+/// <reference path="fallingmode.d.ts" />
+/// <reference path="gaitmode.d.ts" />
 
 
 /** 

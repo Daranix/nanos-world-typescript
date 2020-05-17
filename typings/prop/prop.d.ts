@@ -2,6 +2,7 @@
 /// <reference path="../misc/pickable.d.ts" />
 /// <reference path="../misc/collision/collisionable.d.ts" />
 /// <reference path="../character/character.d.ts" />
+/// <reference path="../prop/propeventtype.d.ts" />
 
 
 /** @customConstructor Prop */

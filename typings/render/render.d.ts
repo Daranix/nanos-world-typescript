@@ -1,3 +1,7 @@
+/// <reference path="../utility/vector2d.d.ts" />
+/// <reference path="../render/fonttype.d.ts" />
+
+
 /** @noSelf */
 declare namespace Render {
     function AddLine(id: number, startPosition: Vector2D, endPosition: Vector2D, thickness: number, color: Color): void;

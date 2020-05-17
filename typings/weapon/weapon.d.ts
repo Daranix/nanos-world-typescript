@@ -1,11 +1,12 @@
 /// <reference path="../item/item.d.ts" />
-/// <reference path="weaponeventtype.d.ts" />
+/// <reference path="./weaponeventtype.d.ts" />
+/// <reference path="../misc/pickeventtype.d.ts" />
+/// <reference path="../character/character.d.ts" />
 
 /** 
  * @customConstructor Weapon 
  * @noSelfInFile
  * */
-
 declare class Weapon extends Actor implements Pickable {
 
     BaseDamage: number;
