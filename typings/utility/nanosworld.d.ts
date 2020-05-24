@@ -15,4 +15,6 @@ declare namespace NanosWorld {
     function GetProps(): Prop[];
     function GetVehicles(): Vehicle[];
     function GetWeapons(): Weapon[];
+    /** @clientSideOnly */
+    function GetLocalPlayer(): Player;
 }
