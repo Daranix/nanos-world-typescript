@@ -11,6 +11,10 @@
 /// <reference path="stancemode.d.ts" />
 /// <reference path="fallingmode.d.ts" />
 /// <reference path="gaitmode.d.ts" />
+/// <reference path="../grenade/grenade.d.ts" />
+/// <reference path="../prop/prop.d.ts" />
+/// <reference path="../vehicle/vehicle.d.ts" />
+/// <reference path="../player/player.d.ts" />
 
 
 /** 

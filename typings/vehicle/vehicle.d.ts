@@ -2,6 +2,9 @@
 /// <reference path="../actor/actor.d.ts" />
 /// <reference path="../misc/pickable.d.ts" />
 /// <reference path="vehicleeventtype.d.ts" />
+/// <reference path="../character/character.d.ts" />
+/// <reference path="../misc/collision/collisiontype.d.ts" />
+
 
 
 /** @customConstructor Vehicle */

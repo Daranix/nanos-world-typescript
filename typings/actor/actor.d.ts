@@ -2,6 +2,9 @@
 /// <reference path="../misc/rotable.d.ts" />
 /// <reference path="../misc/localizable.d.ts" />
 /// <reference path="../utility/vector.d.ts" />
+/// <reference path="../misc/collision/collisionable.d.ts" />
+/// <reference path="../utility/color.d.ts" />
+
 
 
 /** @noSelfInFile */

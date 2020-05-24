@@ -1,6 +1,8 @@
 
 /// <reference path="../actor/actor.d.ts" />
 /// <reference path="../player/playereventtype.d.ts" />
+/// <reference path="../character/character.d.ts" />
+
 
 /** @noSelfInFile */
 declare class Player {

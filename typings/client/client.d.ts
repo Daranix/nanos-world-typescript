@@ -1,4 +1,5 @@
 /// <reference path="clienteventtype.d.ts" />
+/// <reference path="../utility/vector2d.d.ts" />
 
 
 /** @noSelfInFile */
