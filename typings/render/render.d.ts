@@ -1,5 +1,9 @@
 /// <reference path="../utility/vector2d.d.ts" />
 /// <reference path="../render/fonttype.d.ts" />
+/// <reference path="../utility/color.d.ts" />
+/// <reference path="../utility/vector.d.ts" />
+
+
 
 
 /** @noSelf */
@@ -23,6 +27,7 @@ declare namespace Render {
         enableOutline: boolean,
         outLineColor: Color
     ): void;
+    function AddTile(id: number, position: Vector2D, size: Vector2D, color: Color): void;
     function StrLen(text: string, fontType: FontType, fontSize: number): Vector2D;
 
     function Project(location3d: Vector): Vector2D;
