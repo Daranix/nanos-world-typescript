@@ -1,0 +1,1 @@
+import './timer.d.ts'

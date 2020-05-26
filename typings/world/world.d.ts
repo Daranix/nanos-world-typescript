@@ -1,6 +1,6 @@
 /// <reference path="weather.d.ts" />
 
-
+/** @noSelfInFile */
 declare namespace World {
     function SetWind(intensity: number): void;
     function SetWeather(weather: Weather): void;

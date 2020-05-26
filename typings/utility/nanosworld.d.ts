@@ -6,7 +6,7 @@
 /// <reference path="../grenade/grenade.d.ts" />
 
 
-
+/** @noSelfInFile */
 declare namespace NanosWorld {
     function GetCharacters(): Character[];
     function GetGrenades(): Grenade[];
