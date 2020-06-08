@@ -57,7 +57,7 @@ declare class Character extends Actor {
     static on(eventType: CharacterEventType.PickUp | CharacterEventType.Drop, event: (char: Character, object: Item | Grenade | Weapon) => void): void;
     static on(eventType: CharacterEventType.GrabProp | CharacterEventType.UnGrabProp, event: (char: Character, prop: Prop) => void): void;
     static on(eventType: CharacterEventType.EnterVehicle | CharacterEventType.LeaveVehicle, event: (char: Character, vehicle: Vehicle) => void): void;
-    static on(eventType: CharacterEventType.TakeDamage, event: (char: Character, damage: number, bone: string) => void): void;
+    static on(eventType: CharacterEventType.TakeDamage, event: (char: Character, damage: number, type: DamageType, bone: string, fromDirection: Vector, instigator: Player) => void): void;
     static on(eventType: CharacterEventType.Fire, event: (char: Character, weapon: Weapon) => void): void;
     static on(eventType: CharacterEventType.Possessed, event: (char: Character, possesser: Player) => void): void;
     static on(eventType: CharacterEventType.WeaponAimModeChanged, event: (char: Character, oldState: AimMode, newState: AimMode) => void): void;
@@ -67,21 +67,24 @@ declare class Character extends Actor {
     static on(eventType: CharacterEventType.RagdollModeChanged, event: (char: Character, oldState: number, newState: number) => void): void;
     static on(eventType: CharacterEventType.FallingModeChanged, event: (char: Character, oldState: FallingMode, newState: FallingMode) => void): void;
     static on(eventType: CharacterEventType.GaitModeChanged, event: (char: Character, oldState: GaitMode, newState: GaitMode) => void): void;
+    static on(eventType: WeaponEventType.Reload, event: (character: Character, weapon: Weapon, ammoToReload: number) => void): void;
 
     // Self
-    static on(eventType: ActorEventType | CharacterEventType, event: () => void): void;
-    static on(eventType: CharacterEventType.PickUp | CharacterEventType.Drop, event: (object: Item | Grenade | Weapon) => void): void;
-    static on(eventType: CharacterEventType.GrabProp | CharacterEventType.UnGrabProp, event: (prop: Prop) => void): void;
-    static on(eventType: CharacterEventType.EnterVehicle | CharacterEventType.LeaveVehicle, event: (vehicle: Vehicle) => void): void;
-    static on(eventType: CharacterEventType.TakeDamage, event: (damage: number, bone: string) => void): void;
-    static on(eventType: CharacterEventType.Fire, event: (weapon: Weapon) => void): void;
-    static on(eventType: CharacterEventType.Possessed, event: (possesser: Player) => void): void;
-    static on(eventType: CharacterEventType.WeaponAimModeChanged, event: (oldState: AimMode, newState: AimMode) => void): void;
-    static on(eventType: CharacterEventType.ViewModeChanged, event: (oldState: ViewMode, newState: ViewMode) => void): void;
-    static on(eventType: CharacterEventType.SwimmingModeChanged, event: (oldState: SwimmingMode, newState: SwimmingMode) => void): void;
-    static on(eventType: CharacterEventType.StanceModeChanged, event: (oldState: StanceMode, newState: StanceMode) => void): void;
-    static on(eventType: CharacterEventType.RagdollModeChanged, event: (oldState: number, newState: number) => void): void;
-    static on(eventType: CharacterEventType.FallingModeChanged, event: (oldState: FallingMode, newState: FallingMode) => void): void;
-    static on(eventType: CharacterEventType.GaitModeChanged, event: (oldState: GaitMode, newState: GaitMode) => void): void;
+    on(eventType: ActorEventType | CharacterEventType, event: () => void): void;
+    on(eventType: CharacterEventType.PickUp | CharacterEventType.Drop, event: (object: Item | Grenade | Weapon) => void): void;
+    on(eventType: CharacterEventType.GrabProp | CharacterEventType.UnGrabProp, event: (prop: Prop) => void): void;
+    on(eventType: CharacterEventType.EnterVehicle | CharacterEventType.LeaveVehicle, event: (vehicle: Vehicle) => void): void;
+    on(eventType: CharacterEventType.TakeDamage, event: (damage: number, type: DamageType, bone: string, fromDirection: Vector, instigator: Player) => void): void;
+    on(eventType: CharacterEventType.Fire, event: (weapon: Weapon) => void): void;
+    on(eventType: CharacterEventType.Possessed, event: (possesser: Player) => void): void;
+    on(eventType: CharacterEventType.WeaponAimModeChanged, event: (oldState: AimMode, newState: AimMode) => void): void;
+    on(eventType: CharacterEventType.ViewModeChanged, event: (oldState: ViewMode, newState: ViewMode) => void): void;
+    on(eventType: CharacterEventType.SwimmingModeChanged, event: (oldState: SwimmingMode, newState: SwimmingMode) => void): void;
+    on(eventType: CharacterEventType.StanceModeChanged, event: (oldState: StanceMode, newState: StanceMode) => void): void;
+    on(eventType: CharacterEventType.RagdollModeChanged, event: (oldState: number, newState: number) => void): void;
+    on(eventType: CharacterEventType.FallingModeChanged, event: (oldState: FallingMode, newState: FallingMode) => void): void;
+    on(eventType: CharacterEventType.GaitModeChanged, event: (oldState: GaitMode, newState: GaitMode) => void): void;
+    on(eventType: WeaponEventType.Reload, event: (weapon: Weapon, ammoToReload: number) => void): void;
+
 
 }

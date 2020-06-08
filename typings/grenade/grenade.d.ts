@@ -23,7 +23,7 @@ declare class Grenade extends Actor implements Pickable {
      * @memberof Grenade
      */
     constructor(location: Vector, rotation: Rotator, modelName: string, collisionType?: CollisionType, gravityEnabled?: boolean);
-   
+    GetHandler(): Character;
     GetAssetName(): string;
 
     static on(eventType: ActorEventType | GrenadeEventType | PickEventType, action: (grenade: Grenade) => void): void;

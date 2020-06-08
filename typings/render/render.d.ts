@@ -29,6 +29,7 @@ declare namespace Render {
     ): void;
     function AddTile(id: number, position: Vector2D, size: Vector2D, color: Color): void;
     function StrLen(text: string, fontType: FontType, fontSize: number): Vector2D;
+    function GetViewportSize(): Vector2D;
 
     function Project(location3d: Vector): Vector2D;
     function ClearItems(id: number): void;

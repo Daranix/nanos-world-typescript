@@ -1,3 +1,4 @@
 declare const enum WeaponEventType {
-    FIRE = 'Fire'
+    Fire = 'Fire',
+    Reload = 'Reload'
 }

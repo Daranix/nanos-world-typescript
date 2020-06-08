@@ -56,7 +56,7 @@ declare class Weapon extends Actor implements Pickable {
         characterAimingAnimation: string,
         magazineMesh: string
     );
-
+    GetHandler(): Character;
     GetAssetName(): string;
     
     GetAmmoClip(): number;
@@ -69,7 +69,9 @@ declare class Weapon extends Actor implements Pickable {
 
     static on(eventType: ActorEventType, event: (weapon: Weapon) => void): void;
     static on(eventType: WeaponEventType | PickEventType, event: (weapon: Weapon, character: Character) => void): void;
+    static on(eventType: WeaponEventType.Reload, event: (weapon: Weapon, character: Character, ammoToReload: number) => void): void;
     on(eventType: ActorEventType, event: () => void): void;
     on(eventType: WeaponEventType | PickEventType, event: (character: Character) => void): void;
+    on(eventType: WeaponEventType.Reload, event: (character: Character, ammoToReload: number) => void): void;
 
 }

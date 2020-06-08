@@ -9,6 +9,7 @@
 declare class Prop extends Actor implements Pickable {
     
     constructor(location: Vector, rotation: Rotator, modelName: string, collisionType?: CollisionType, gravityEnabled?: boolean);
+    GetHandler(): Character;
     GetAssetName(): string;
 
     SetGrabbable(grabbable: boolean): void;
