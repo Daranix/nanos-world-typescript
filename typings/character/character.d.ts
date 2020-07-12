@@ -15,6 +15,8 @@
 /// <reference path="../prop/prop.d.ts" />
 /// <reference path="../vehicle/vehicle.d.ts" />
 /// <reference path="../player/player.d.ts" />
+/// <reference path="damagetype.d.ts" />
+
 
 
 /** 
@@ -51,6 +53,13 @@ declare class Character extends Actor {
     GetMorphTarget(): number;
     GetScalarParameter(): number;
     GetVectorParameter(): number;
+    AddStaticMeshAttached(id: number, staticMeshPath: string, socket: string, relativeLocation: Vector, relativeRotation: Rotator): void;
+    AddSkeletalMeshAttached(id: number, staticMeshPath: string): void;
+    RemoveStaticMeshAttached(id: number): void;
+    RemoveSkeletalMeshAttached(id: number): void;
+    MoveTo(vector: Vector, acceptanceDistanceRadius: number): void;
+    LookAt(location: Vector): void;
+    SetWeaponAimMode(aimMode: AimMode): void;
 
     // Static
     static on(eventType: ActorEventType | CharacterEventType, event: (char: Character) => void): void;
