@@ -10,6 +10,7 @@ declare class Player {
     GetControlledCharacter(): Character;
     Possess(character: Character): void;
     UnPossess(): void;
+    IsLocalPlayer(): void;
     static on(eventType: PlayerEventType.Spawn, action: (player: Player) => void): void;
     static on(eventType: PlayerEventType.POSSESS, action: (player: Player, character: Character) => void): void;
     static on(eventType: PlayerEventType.UNPOSSESS, action: (player: Player, character: Character, blsPlayerDisconnecting: boolean) => void): void;
