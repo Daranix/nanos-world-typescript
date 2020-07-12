@@ -4,5 +4,7 @@ declare interface Pickable {
      * @memberof Pickable
      */
     GetAssetName(): string;
-    GetHandler(): Character; 
+    GetHandler(): Character;
+    PullUse(): void;
+    ReleaseUse(): void;
 }
