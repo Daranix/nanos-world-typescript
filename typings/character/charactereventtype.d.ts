@@ -18,5 +18,6 @@ declare const enum CharacterEventType {
     StanceModeChanged = 'StanceModeChanged',
     RagdollModeChanged = 'RagdollModeChanged',
     FallingModeChanged = 'FallingModeChanged',
-    GaitModeChanged = 'GaitModeChanged'
+    GaitModeChanged = 'GaitModeChanged',
+    MoveCompleted = 'MoveCompleted'
 }

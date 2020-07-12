@@ -3,7 +3,9 @@
 /// <reference path="../utility/vector.d.ts" />
 /// <reference path="triggereventtype.d.ts" />
 
-
+/**
+ * @noSelfInFile
+ */
 declare class Trigger extends Actor {
 
     constructor(location: Vector, radius: number, isVisible: boolean, color: Color);

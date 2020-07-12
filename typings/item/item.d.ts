@@ -18,11 +18,14 @@ declare class Item extends Actor implements Pickable {
      * @param {Vector} location
      * @param {Rotator} rotation
      * @param {string} modelName
-     * @param {CollisionType} [collisionType] Vector (Normal)
-     * @param {boolean} [gravityEnabled] = true
+     * @param {CollisionType} [collisionType] Vector (default: Normal)
+     * @param {boolean} [gravityEnabled] (default: true)
      * @memberof Item
      */
     constructor(location: Vector, rotation: Rotator, modelName: string, collisionType?: CollisionType, gravityEnabled?: boolean);
+    PullUse(): void;
+    ReleaseUse(): void;
+    GetHandler(): Character;
     GetAssetName(): string;
 
     static on(eventType: ItemEventType | ActorEventType, event: (item: Item, character: Character) => void): void;
