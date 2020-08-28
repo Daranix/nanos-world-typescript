@@ -4,5 +4,6 @@ declare const enum ClientEventType {
     KeyDown = 'KeyDown',
     MouseUp = 'MouseUp',
     MouseDown = 'MouseDown',
-    Console = 'Console'
+    Console = 'Console',
+    Chat = 'Chat'
 }

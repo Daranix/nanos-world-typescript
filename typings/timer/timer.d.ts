@@ -1,6 +1,6 @@
 
 /** @noSelfInFile */
 declare namespace Timer {
-    function SetTimeout(miliseconds: number, params: any[], callback: (...args: any[] ) => boolean): number;
-    function ClearTimeout(timerId: number);
+    function SetTimeout(miliseconds: number, callback: (...args: any[] ) => boolean, params: any[]): number;
+    function ClearTimeout(timerId: number): void;
 }

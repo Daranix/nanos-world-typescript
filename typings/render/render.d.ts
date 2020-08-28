@@ -6,7 +6,6 @@
 
 
 
-/** @noSelf */
 declare namespace Render {
     function AddLine(groupId: number, startPosition: Vector2D, endPosition: Vector2D, thickness: number, color: Color): number;
     function AddBox(groupId: number, startPosition: Vector2D, endPosition: Vector2D, thickness: number, color: Color): number;

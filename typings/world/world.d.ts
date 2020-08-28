@@ -1,6 +1,4 @@
 /// <reference path="weather.d.ts" />
-
-/** @noSelfInFile */
 declare namespace World {
     function SetWind(intensity: number): void;
     function SetWeather(weather: Weather): void;
@@ -20,4 +18,5 @@ declare namespace World {
      * @min 0 
      * @max 1440 */
     function GetTime(): number;
+    function SpawnDefaultSun(): void;
 }

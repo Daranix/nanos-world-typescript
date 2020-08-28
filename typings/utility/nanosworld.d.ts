@@ -5,8 +5,6 @@
 /// <reference path="../actor/actor.d.ts" />
 /// <reference path="../grenade/grenade.d.ts" />
 
-
-/** @noSelfInFile */
 declare namespace NanosWorld {
     function GetCharacters(): Character[];
     function GetGrenades(): Grenade[];
@@ -17,4 +15,5 @@ declare namespace NanosWorld {
     function GetWeapons(): Weapon[];
     /** @clientSideOnly */
     function GetLocalPlayer(): Player;
+    function on(event: 'SpawnLocalPlayer', eventCallback: (localPlayer: Player) => void): void;
 }

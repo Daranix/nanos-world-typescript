@@ -24,9 +24,7 @@
  * @noSelfInFile
 */
 declare class Character extends Actor {
-
-    Health: number;
-
+    
     constructor();
     constructor(location: Vector, rotator: Rotator, collisionType?: CollisionType, gravityEnabled?: boolean, maxHealth?: number);
 
@@ -60,6 +58,21 @@ declare class Character extends Actor {
     MoveTo(vector: Vector, acceptanceDistanceRadius: number): void;
     LookAt(location: Vector): void;
     SetWeaponAimMode(aimMode: AimMode): void;
+    /**
+     * @param {number} multiplier 1 = normal
+     * @memberof Character
+     */
+    SetSpeedMultiplier(multiplier: number): void;
+    /**
+     * Disables damage between members of the same team
+     * @param {number} team
+     * @memberof Character
+     */
+    SetTeam(team: number): void;
+    SetGaitMode(gaitMode: GaitMode): void;
+    GetSpeedMultiplier(): number;
+    SetHealth(health: number): void;
+    GetHealth(): number;
 
     // Static
     static on(eventType: ActorEventType | CharacterEventType, event: (char: Character) => void): void;

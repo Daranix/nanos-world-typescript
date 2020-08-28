@@ -11,6 +11,11 @@ declare class Player {
     Possess(character: Character): void;
     UnPossess(): void;
     IsLocalPlayer(): void;
+    SetCameraLocation(location: Vector): void;
+    SetCameraRotation(rotation: Rotator): void;
+    SetName(name: string): void;
+    Kick(reason: string): void;
+    Ban(reason: string): void;
     static on(eventType: PlayerEventType.Spawn, action: (player: Player) => void): void;
     static on(eventType: PlayerEventType.POSSESS, action: (player: Player, character: Character) => void): void;
     static on(eventType: PlayerEventType.UNPOSSESS, action: (player: Player, character: Character, blsPlayerDisconnecting: boolean) => void): void;
