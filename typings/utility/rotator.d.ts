@@ -5,6 +5,7 @@ declare class Rotator {
     Yaw: number;
     Roll: number;
 
+    constructor();
     constructor(pitch: number, yaw: number, roll: number); 
 
 }
