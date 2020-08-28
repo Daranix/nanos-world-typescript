@@ -56,6 +56,8 @@ declare class Weapon extends Actor implements Pickable {
         characterAimingAnimation: string,
         magazineMesh: string
     );
+    PullUse(): void;
+    ReleaseUse(): void;
     GetHandler(): Character;
     GetAssetName(): string;
     

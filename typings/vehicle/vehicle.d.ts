@@ -11,6 +11,9 @@
 declare class Vehicle extends Actor implements Pickable {
 
     constructor(location: Vector, rotation: Rotator, modelName: string, collisionType?: CollisionType, gravityEnabled?: boolean);
+    GetHandler(): Character;
+    PullUse(): void;
+    ReleaseUse(): void;
     
     GetAssetName(): string;
 

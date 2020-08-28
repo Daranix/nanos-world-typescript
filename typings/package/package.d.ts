@@ -1,10 +1,11 @@
 /// <reference path="packageeventtype.d.ts" />
 
 
-declare namespace Package {
-    function GetName(): string;
-    function Log(message: string): void;
-    function Require(luaFile: string): void;
-    function RequirePackage(packageName: string): void;
-    function on(eventType: PackageEventType, action: () => void): void;
+/** @noSelfInFile */
+declare class Package {
+    static GetName(): string;
+    static Log(message: string): void;
+    static Require(luaFile: string): void;
+    static RequirePackage(packageName: string): void;
+    static on(eventType: PackageEventType, action: () => void): void;
 }

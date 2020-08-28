@@ -9,6 +9,8 @@
 declare class Prop extends Actor implements Pickable {
     
     constructor(location: Vector, rotation: Rotator, modelName: string, collisionType?: CollisionType, gravityEnabled?: boolean);
+    PullUse(): void;
+    ReleaseUse(): void;
     GetHandler(): Character;
     GetAssetName(): string;
 

@@ -1,14 +1,15 @@
 /// <reference path="clienteventtype.d.ts" />
 /// <reference path="../utility/vector2d.d.ts" />
 
-declare namespace Client {
-    function GetMousePosition(): Vector2D;
-    function IsMouseEnabled(): boolean;
-    function SetMouseEnabled(status: boolean): void;
-    function SetDiscordActivity(state: string, details: string, largeImage: string, largeText: string): void;
-    function IsKeyDown(): boolean;
-    function on(event: ClientEventType.Tick, action: (deltaTime: number) => void): void;
-    function on(event: ClientEventType.KeyUp | ClientEventType.KeyDown, action: (keyName: string) => void): void;
-    function on(event: ClientEventType.MouseDown, action: (keyName: string, mouseX: number, mouseY: number) => void): void;
-    function on(event: ClientEventType.Console | ClientEventType.Chat, action: (text: string) => void): void;
+/** @noSelfInFile */
+declare class Client {
+    static GetMousePosition(): Vector2D;
+    static IsMouseEnabled(): boolean;
+    static SetMouseEnabled(status: boolean): void;
+    static SetDiscordActivity(state: string, details: string, largeImage: string, largeText: string): void;
+    static IsKeyDown(): boolean;
+    static on(event: ClientEventType.Tick, action: (deltaTime: number) => void): void;
+    static on(event: ClientEventType.KeyUp | ClientEventType.KeyDown, action: (keyName: string) => void): void;
+    static on(event: ClientEventType.MouseDown, action: (keyName: string, mouseX: number, mouseY: number) => void): void;
+    static on(event: ClientEventType.Console | ClientEventType.Chat, action: (text: string) => void): void;
 }

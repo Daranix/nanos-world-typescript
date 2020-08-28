@@ -5,15 +5,16 @@
 /// <reference path="../actor/actor.d.ts" />
 /// <reference path="../grenade/grenade.d.ts" />
 
-declare namespace NanosWorld {
-    function GetCharacters(): Character[];
-    function GetGrenades(): Grenade[];
-    function GetItems(): Item[];
-    function GetPlayers(): Player[];
-    function GetProps(): Prop[];
-    function GetVehicles(): Vehicle[];
-    function GetWeapons(): Weapon[];
+/** @noSelfInFile */
+declare class NanosWorld {
+    static GetCharacters(): Character[];
+    static GetGrenades(): Grenade[];
+    static GetItems(): Item[];
+    static GetPlayers(): Player[];
+    static GetProps(): Prop[];
+    static GetVehicles(): Vehicle[];
+    static GetWeapons(): Weapon[];
     /** @clientSideOnly */
-    function GetLocalPlayer(): Player;
-    function on(event: 'SpawnLocalPlayer', eventCallback: (localPlayer: Player) => void): void;
+    static GetLocalPlayer(): Player;
+    static on(event: 'SpawnLocalPlayer', eventCallback: (localPlayer: Player) => void): void;
 }

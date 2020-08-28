@@ -1,22 +1,24 @@
 /// <reference path="weather.d.ts" />
-declare namespace World {
-    function SetWind(intensity: number): void;
-    function SetWeather(weather: Weather): void;
+
+/** @noSelfInFile */
+declare class World {
+    static SetWind(intensity: number): void;
+    static SetWeather(weather: Weather): void;
     /** 
      * @min 0 
      * @max 360 
      * */
-    function SetSunAngle(angle: number): void;
-    function SetSunSpeed(speed: number): void;
-    function SetTime(hours: number, minutes: number): void;
-    function GetWeather(): number;
-    function GetWind(): number;
-    function GetSunAngle(): number;
-    function GetSunSpeed(): number;
+    static SetSunAngle(angle: number): void;
+    static SetSunSpeed(speed: number): void;
+    static SetTime(hours: number, minutes: number): void;
+    static GetWeather(): number;
+    static GetWind(): number;
+    static GetSunAngle(): number;
+    static GetSunSpeed(): number;
     /** 
      * (Hours * 60 + Minutes) - Goes from 0 to 1440
      * @min 0 
      * @max 1440 */
-    function GetTime(): number;
-    function SpawnDefaultSun(): void;
+    static GetTime(): number;
+    static SpawnDefaultSun(): void;
 }
