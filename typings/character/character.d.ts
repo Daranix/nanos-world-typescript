@@ -73,6 +73,8 @@ declare class Character extends Actor {
     GetSpeedMultiplier(): number;
     SetHealth(health: number): void;
     GetHealth(): number;
+    PlayAnimation(animationPath: string, slotType: number, loopIndefinitely: boolean): void;
+    Respawn(): void;
 
     // Static
     static on(eventType: ActorEventType | CharacterEventType, event: (char: Character) => void): void;

@@ -9,6 +9,7 @@ declare class WebUI {
     Destroy(): void;
     IsValid(): void;
     GetType(): string;
+    BringToFront(): void;
 
     // It is only allowed to pass number, string and boolean between WebUI and your Package.
 

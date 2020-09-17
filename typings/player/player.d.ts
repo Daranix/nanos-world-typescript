@@ -11,6 +11,10 @@ declare class Player {
     Possess(character: Character): void;
     UnPossess(): void;
     IsLocalPlayer(): void;
+    SetVOIPChannel(channel: number): void;
+    SetVOIPMuted(isMuted: boolean): void;
+    GetVOIPChannel(): number;
+    IsVOIPMuted(): boolean;
     SetCameraLocation(location: Vector): void;
     SetCameraRotation(rotation: Rotator): void;
     SetName(name: string): void;
